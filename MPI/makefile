@@ -1,7 +1,10 @@
-all: test
+all: mpi1 mpi2
 
-test: test.c
-	gcc test.c -o test
+mpi1: mpi1.c
+	mpicc mpi1.c -o mpi1
 
-clear:
-	rm *.exe
+mpi2: mpi2.c
+	mpicc mpi2.c -o mpi2
+
+clean:
+	rm mpi1 mpi2
