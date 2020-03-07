@@ -1,10 +1,10 @@
-all: mpi1 mpi2
+all: train guide
 
-mpi1: mpi1.c
-	mpicc mpi1.c -o mpi1
+train: train.c
+	mpicc train.c -o train
 
-mpi2: mpi2.c
-	mpicc mpi2.c -o mpi2
+guide: guide.c
+	mpicc guide.c -o guide
 
 clean:
-	rm mpi1 mpi2
+	rm train guide
