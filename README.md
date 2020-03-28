@@ -3,8 +3,8 @@ This repo contains my homework programs for "Parallel Programming" seminars in M
 ### Programs
 #### Obligatory programs
 * MPI
-  * Ranks of processes;
-  * Work time of collective functions.
+  * Ranks of processes _(train.c, guide.c)_;
+  * Work time of collective functions _(time.c)_.
 #### Bonus programs
 * MPI
   * Realization of collective functions;
