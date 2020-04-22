@@ -1,4 +1,4 @@
-all: time train guide my_functions
+all: time train guide my_functions series
 
 my_functions: my_functions.c
 	mpicc my_functions.c -o my_functions
@@ -12,5 +12,8 @@ train: train.c
 guide: guide.c
 	mpicc guide.c -o guide
 
+series: series.c
+	mpicc series.c -o series
+
 clean:
-	rm train guide time my_functions
+	rm train guide time my_functions series
