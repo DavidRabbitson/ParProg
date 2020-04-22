@@ -5,7 +5,6 @@ int main(int argc, char** argv)
 {
     int rank = 0;
     int size = 0;
-    int buf = 0;
 
 	double PI = 3.14;
 	double time = 0.0;
@@ -15,7 +14,7 @@ int main(int argc, char** argv)
     MPI_Comm_rank( MPI_COMM_WORLD, &rank);
     MPI_Comm_size( MPI_COMM_WORLD, &size);
 
-	int series_size = 10000;
+	int series_size = 1000;
 
     if(rank == 0)
     {
